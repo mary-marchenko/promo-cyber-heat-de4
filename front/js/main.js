@@ -333,12 +333,9 @@
 
     function getPrizeTranslationKey(points, place) {
         if (points == null || points < 5) return null;
-        if (place >= 1 && place <= 5) return `prize_${place}`;
-        if (place >= 6 && place <= 10) return `prize_6-10`;
-        if (place >= 11 && place <= 15) return `prize_11-15`;
-        if (place >= 16 && place <= 20) return `prize_16-20`;
-        if (place >= 21 && place <= 50) return `prize_21-50`;
-        if (place >= 51 && place <= 100) return `prize_51-100`;
+
+        if (place >= 1 && place <= 10) return `prize_${place}`;
+        if (place >= 11 && place <= 30) return `prize_11-30`;
     }
 
     async function init() {
